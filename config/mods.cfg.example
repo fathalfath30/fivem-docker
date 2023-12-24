@@ -1,0 +1,5 @@
+# Core FiveM plugins
+ensure chat
+ensure spawnmanager
+ensure sessionmanager
+ensure hardcap

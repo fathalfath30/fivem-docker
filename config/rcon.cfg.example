@@ -1,0 +1,2 @@
+# Uncomment this and set a password to enable RCON. Make sure to change the password - it should look like rcon_password "YOURPASSWORD"
+# rcon_password ""

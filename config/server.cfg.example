@@ -1,0 +1,30 @@
+### AUTOMATICALLY SET BY PTERODACTYL ###
+# Only change the IP if you're using a server with multiple network interfaces, otherwise change the port only.
+endpoint_add_tcp "0.0.0.0:30120"
+endpoint_add_udp "0.0.0.0:30120"
+
+# Server player slot limit (see https://fivem.net/server-hosting for limits)
+sv_maxclients 38
+
+# Steam Web API key, if you want to use Steam authentication (https://steamcommunity.com/dev/apikey)
+# -> replace "" with the key
+# set steam_webApiKey ""
+
+# License key for your server (https://keymaster.fivem.net)
+# -> replace "" with the key
+# set sv_licenseKey ""
+
+# server information
+exec server_info.cfg
+
+# server rcon
+exec rcon.cfg
+
+# load server vars and database config
+exec server_vars.cfg
+
+# load administrator info
+exec admin.cfg
+
+# load mods
+exec mods.cfg
