@@ -1,0 +1,42 @@
+{
+    "name": "fivem-docker",
+    "version": "1.0.0",
+    "repository": "git@github.com:fathalfath30/fivem-docker.git",
+    "author": "fathalfath30 <fathalfath30@gmail.com>",
+    "license": "MIT",
+    "engines": {
+        "npm": "please-use-yarn",
+        "pnpm": "please-use-yarn",
+        "yarn": ">= 1.19.1"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^12.1.1",
+        "@commitlint/config-conventional": "^12.1.1",
+        "commitizen": "^4.2.3",
+        "custom-cz-conventional-changelog-for-jira": "^0.0.0-semantically-released",
+        "cz-conventional-changelog": "^3.3.0",
+        "husky": "^6.0.0",
+        "nodemon": "2.0.7",
+        "pre-commit": "^1.2.2"
+    },
+    "dependencies": {
+        "file-saver": "^2.0.5",
+        "jszip": "^3.10.1"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/custom-cz-conventional-changelog-for-jira",
+            "jiraOptional": true
+        },
+        "docker": {
+            "file": "./Dockerfile",
+            "compose": "./docker-compose.yaml"
+        }
+    },
+    "scripts": {
+        "git:no-ssl": "git -c http.sslVerify=false"
+    },
+    "pre-commit": {
+        "run": []
+    }
+}

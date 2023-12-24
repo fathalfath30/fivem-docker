@@ -1,0 +1,7 @@
+### NodeJS
+node_modules
+*.lock
+
+### IDE's
+.idea
+.vscode
